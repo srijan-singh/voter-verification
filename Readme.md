@@ -1,5 +1,7 @@
 # Voter Verification 
 
+*Automated voter verification with facial recognition to reduce human error by  reating a client-server architecture as part of API development.*
+
 ## INTRODUCTION
 
 Face detection and face recognition are very important technologies these days, furthermore we noticed that they got have a variety of uses such as smart phones, army uses, and some high risk information offices. Our project will provide services which will allow them to predict and recognize faces.
