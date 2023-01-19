@@ -6,6 +6,10 @@
         </title>
         <script src="script.js"></script>
         <link href="frontend/style/style.css" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="row">
@@ -28,7 +32,7 @@
                     <div class="row">
                 <div class="column">
                     <div class="card">
-                    <h1>Source Image</h1>                
+                    <h2>Source Image</h2>                
                     <form id="source"> 
                         <table>
                             <tr>
@@ -48,7 +52,7 @@
 
                 <div class="column">
                     <div class="card">
-                    <h1>Target Image</h1>
+                    <h2>Target Image</h2>
                     <form id="target">   
                         <table>
                             <tr>
@@ -63,17 +67,23 @@
                 </div>
             </div>
 
-                <div class="card">
-                    <h1>Authentication</h1>
+                <div class="auth-card">
+                    <h2>Authentication</h2>
                     <button onclick="fetch_result()">Get Result</button>
                     <br>
-                    <div id="loading" style="display: none;">Loading Please Wait...</div>
+                    <div id="loading" style="display: none;"><br>Loading Please Wait...</div>
                     <br>
                     <div id="authentication"></div>
                 </div>
             </div> 
         </center>
         </div>
-        
+        <div class="row">
+            <marquee>
+                <h3>
+                Developers : Srijan Singh, Ritika Bisht, Siddhesh Sharma and Shalini Aswal &emsp; | &emsp; Project Guide : Dhyaneshwar Sir &emsp; | &emsp; Project Mentor : Daxa Ma'am
+                </h3>
+            </marquee>
+        </div>
     </body>
 </html>

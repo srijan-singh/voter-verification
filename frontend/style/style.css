@@ -1,3 +1,21 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3{
+    color: cornflowerblue;
+}
+
+input,input::file-selector-button,button{
+    background: linear-gradient(white, azure, aliceblue);
+    border-radius: 25px;
+    border-color: cornflowerblue;
+}
+
+.row{
+    background-image: linear-gradient(white, azure, aliceblue);
+}
+
 .left{ 
     margin-top: 10%;
     float: left;
@@ -16,6 +34,7 @@
   }
 
   .card{
+    background-color: white;
     margin: 10px;
     padding: 10px;
     width: 400px;
@@ -25,6 +44,20 @@
   }
 
   .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .auth-card{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 140px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .auth-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
