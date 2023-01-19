@@ -1,10 +1,12 @@
 #waiting-man{
+    position: absolute;
+    left: 10;
     top: 35%;
-    right: 1;
 }
 
 #booth{
     height: 300px;
     width: 300px;
+    left: 0;
     top: 40%;
 }
