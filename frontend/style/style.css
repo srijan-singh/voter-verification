@@ -1,12 +1,49 @@
+.left{ 
+    margin-top: 10%;
+    float: left;
+    width: 20%;
+}
+
+.right{
+    margin-top: 2%;
+    float: left;
+    width: 80%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+
+  .card{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 175px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  
+/* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #waiting-man{
     position: absolute;
-    left: 10;
-    top: 35%;
+    top: 25%;
+    left: -1%;
+    
 }
 
 #booth{
     height: 300px;
     width: 300px;
-    left: 0;
-    top: 40%;
 }

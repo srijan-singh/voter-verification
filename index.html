@@ -5,52 +5,75 @@
             Voter Verification
         </title>
         <script src="script.js"></script>
+        <link href="frontend/style/style.css" rel="stylesheet"/>
     </head>
     <body>
-        
-            <div class="source">
-                <h1>Source Image</h1>                
-                <form id="source"> 
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <td><input type="text" name="name"/></td>
-                        </tr>
-                        <tr>
-                            <th>Image</th>
-                            <td><input type="file" accept="image/*" name="source_image"/></td>
-                        </tr>
-                    </table> 
-                    <br>
-                        <input type="submit" onclick="upload_source()">          
-                </form>
+        <div class="row">
+
+            <center>
+                <h1>
+                    Voter Verification via Facial Recognition
+                </h1>
+            </center>
+
+            <div class="left">
+
+            <img id="booth" src="frontend/res/booth.png"/>
+            <img id="waiting-man" src="frontend/res/wm.gif"/>
+
             </div>
 
-            <div class="target">
-                <h1>Target Image</h1>
-                <form id="target">   
-                    <table>
-                        <tr>
-                            <th>Image</th>
-                            <td><input type="file" accept="image/*" name="target_image"/></td>
-                        </tr>
-                    </table>    
-                    <br>
-                        <input type="submit" onclick="upload_target()">        
-                </form>
+            <div class="right">
+                <center>
+                    <div class="row">
+                <div class="column">
+                    <div class="card">
+                    <h1>Source Image</h1>                
+                    <form id="source"> 
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <td><input type="text" name="name"/></td>
+                            </tr>
+                            <tr>
+                                <th>Image</th>
+                                <td><input type="file" accept="image/*" name="source_image"/></td>
+                            </tr>
+                        </table> 
+                        <br>
+                            <input type="submit" onclick="upload_source()">          
+                    </form>
+                </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                    <h1>Target Image</h1>
+                    <form id="target">   
+                        <table>
+                            <tr>
+                                <th>Image</th>
+                                <td><input type="file" accept="image/*" name="target_image"/></td>
+                            </tr>
+                        </table>    
+                        <br>
+                            <input type="submit" onclick="upload_target()">        
+                    </form>
+                </div>
+                </div>
             </div>
 
-            <div class="result">
-                <h1>Authentication</h1>
-                <button onclick="fetch_result()">Get Result</button>
-                <br>
-                <div id="loading" style="display: none;">Loading Please Wait...</div>
-                <br>
-                <div id="authentication"></div>
-            </div>
+                <div class="card">
+                    <h1>Authentication</h1>
+                    <button onclick="fetch_result()">Get Result</button>
+                    <br>
+                    <div id="loading" style="display: none;">Loading Please Wait...</div>
+                    <br>
+                    <div id="authentication"></div>
+                </div>
+            </div> 
+        </center>
+        </div>
         
-        
-        <img id="booth" src="frontend/res/booth.png"/>
-        <img id="waiting-man" src="frontend/res/wm.gif"/>
     </body>
 </html>
