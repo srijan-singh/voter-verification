@@ -4,7 +4,7 @@
         <title>
             Voter Verification
         </title>
-        <script src="script.js"></script>
+        <script src="frontend/script/script.js"></script>
         <link href="frontend/style/style.css" rel="stylesheet"/>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,55 +15,58 @@
         <div class="row">
 
             <center>
+                <div class="header">
                 <h1>
                     Voter Verification via Facial Recognition
                 </h1>
+            </div>
             </center>
 
             <div class="left">
 
-            <img id="booth" src="frontend/res/booth.png"/>
-            <img id="waiting-man" src="frontend/res/wm.gif"/>
+            <div class="space">
+                <img id="booth" src="frontend/res/booth.png"/>
+                <img id="waiting-man" src="frontend/res/wm.gif"/>
+            </div>
 
             </div>
 
             <div class="right">
                 <center>
                     <div class="row">
-                <div class="column">
-                    <div class="card">
-                    <h2>Source Image</h2>                
-                    <form id="source"> 
-                        <table>
-                            <tr>
-                                <th>Name</th>
-                                <td><input type="text" name="name"/></td>
-                            </tr>
-                            <tr>
-                                <th>Image</th>
-                                <td><input type="file" accept="image/*" name="source_image"/></td>
-                            </tr>
-                        </table> 
-                        <br>
-                            <input type="submit" onclick="upload_source()">          
-                    </form>
-                </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                    <h2>Target Image</h2>
-                    <form id="target">   
-                        <table>
-                            <tr>
-                                <th>Image</th>
-                                <td><input type="file" accept="image/*" name="target_image"/></td>
-                            </tr>
-                        </table>    
-                        <br>
-                            <input type="submit" onclick="upload_target()">        
-                    </form>
-                </div>
+                        <div class="column">
+                            <div class="card">
+                            <h2>Source Image</h2>                
+                            <form id="source"> 
+                                <table>
+                                    <tr>
+                                        <th>Name</th>
+                                        <td><input type="text" name="name"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Image</th>
+                                        <td><input type="file" accept="image/*" name="source_image"/></td>
+                                    </tr>
+                                </table> 
+                                <br>
+                                    <input type="submit" onclick="upload_source()">          
+                            </form>
+                        </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                            <h2>Target Image</h2>
+                            <form id="target">   
+                                <table>
+                                    <tr>
+                                        <th>Image</th>
+                                        <td><input type="file" accept="image/*" name="target_image"/></td>
+                                    </tr>
+                                </table>    
+                                <br>
+                                    <input type="submit" onclick="upload_target()">        
+                            </form>
+                    </div>
                 </div>
             </div>
 
@@ -78,12 +81,11 @@
             </div> 
         </center>
         </div>
-        <div class="row">
             <marquee>
                 <h3>
-                Developers : Srijan Singh, Ritika Bisht, Siddhesh Sharma and Shalini Aswal &emsp; | &emsp; Project Guide : Dhyaneshwar Sir &emsp; | &emsp; Project Mentor : Daxa Ma'am
+                Developers : Srijan Singh, Ritika Bisht, Siddhesh Sharma and Shalini Aswal &emsp; | &emsp; Project Guide : Dhyaneshwar Sir &emsp; | &emsp; Project Mentor : Daxa Ma'am &emsp; | &emsp; Department : Computer Science Engineering &emsp; | &emsp; College : Parul Institute of Engineering and Technology
                 </h3>
             </marquee>
-        </div>
+        
     </body>
 </html>

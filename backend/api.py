@@ -34,7 +34,7 @@ async def upload_image(name:str = Form(...), source_image:UploadFile = File(...)
     with open(data_file, "wb") as buffer:
         shutil.copyfileobj(source_image.file, buffer)
 
-    return {"response": "uploaded source image"}
+    return {"response": "Source Image Uploaded!"}
 
 
 @app.post("/upload/target")
@@ -43,7 +43,7 @@ async def target_image(target_image: UploadFile = File(...)):
     with open(target_file, "wb") as buffer:
         shutil.copyfileobj(target_image.file, buffer)
 
-    return {"response": "uploaded target image"}
+    return {"response": "Target Image Uploaded!"}
 
 
 @app.get("/result")
